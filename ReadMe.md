@@ -20,6 +20,7 @@ This repository only exists to show raw code for the project as it is being host
 
 
 username: *galleryadmin*
+
 password: *securepw*
 </details>
 
