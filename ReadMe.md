@@ -17,7 +17,7 @@ This repository only exists to show raw code for the project as it is being host
 
 <details>
 <summary>Login credentials</summary>
-
+<br>
 
 username: *galleryadmin*
 
