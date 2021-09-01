@@ -4,7 +4,7 @@
 
 <div class="p-3 mb-3 bg-light">
     <h1 class="text-dark">Flavor Gallery</h1>
-    <p>To insert, update, or delete images, please login. Login credentials in Github repository.</p>
+    <p>To insert, update, or delete images, please login. Login credentials in <a href="https://github.com/angeline-m/flavor-gallery" target="_blank">Github repository.</a></p>
     <br>
     <div class="row">
             <?php

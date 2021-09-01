@@ -19,6 +19,7 @@ This repository only exists to show raw code for the project. The project is bei
 <summary>Login credentials</summary>
 <br>
 username: *galleryadmin*
+
 password: *securepw*
 </details>
 
