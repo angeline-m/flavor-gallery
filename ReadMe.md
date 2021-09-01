@@ -2,7 +2,7 @@
 Welcome to the tastiest image gallery you'll ever see! We've got full CRUD functionality here, but you'll have to log-in first.
 
 
-This repository only exists to show raw code for the project. The project is being hosted on 000webhost. For security purposes, the mysql_connect.php has not been uploaded.
+This repository only exists to show raw code for the project. The project is being hosted on 000webhost. For security purposes, the `mysql_connect.php` file has not been uploaded.
 
 
 **This project uses PHP, MySQL, and Bootstrap v4.0.**
