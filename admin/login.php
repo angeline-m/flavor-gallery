@@ -1,5 +1,7 @@
 <?PHP
     session_start();
+    include("../includes/header.php");
+    echo "<h2 class=\"text-dark\">Login</h2>";
     if (isset($_POST['submit'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
@@ -8,14 +10,13 @@
             header("Location:../index.php");
         }
         else {
-            echo "Incorrect login credentials";
+            echo "<p class=\"text-danger\">Incorrect login credentials</p>";
         }
     }
-    include("../includes/header.php");
+    
 
-echo "
-<h2 class=\"text-dark\">Login</h2>
-<form action=\"";
+
+echo "<form action=\"";
 echo htmlspecialchars($_SERVER['PHP_SELF']);
 echo "\" method=\"post\" name=\"login\">
     <label for=\"login\" class=\"mt-3\">Username</label>
