@@ -7,18 +7,21 @@
             $_SESSION['05e252a0-8c03-4b70-95fc-5f64a6a2df6c'] = session_id();
             header("Location:../index.php");
             include("../includes/header.php");
+            echo "<h2 class=\"text-dark\">Login</h2>";
         }
         else {
             include("../includes/header.php");
-            echo "<br><p class=\"text-danger\">Incorrect login credentials</p>";
+            echo "<h2 class=\"text-dark\">Login</h2>";
+            echo "<p class=\"text-danger\">Incorrect login credentials</p>";
         }
     }
     else {
         include("../includes/header.php");
+        echo "<h2 class=\"text-dark\">Login</h2>";
     }
 
 
-echo "<h2 class=\"text-dark\">Login</h2>";
+
 echo "<form action=\"";
 echo htmlspecialchars($_SERVER['PHP_SELF']);
 echo "\" method=\"post\" name=\"login\">
