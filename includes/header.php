@@ -29,7 +29,7 @@
                         <a class="nav-link text-light" href="<?php echo BASE_URL; ?>admin/insert.php">Insert</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="<?php echo BASE_URL; ?>admin/edit.php">Update/Delete</a>
+                        <a class="nav-link text-light" href="<?php echo BASE_URL; ?>admin/edit.php">Edit</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
