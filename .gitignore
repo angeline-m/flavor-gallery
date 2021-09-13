@@ -1,2 +1,4 @@
 mysql_connect.php
 *.sql
+edit.php
+insert.php
