@@ -51,27 +51,34 @@
     {
         $errors = 0;
 
-        if (($_FILES["file"]["type"] == "image/jpeg")||($_FILES["file"]["type"] == "image/pjpeg")|| ($_FILES["file"]["type"] == "image/png"))
+        if ($_FILES["file"]["tmp_name"] == null || $_FILES["file"]["tmp_name"] == "")
         {
-            $filename = uniqid() . "." . substr($_FILES["file"]["type"], 6);
-
-            if($_FILES["file"]["size"] > 1000000)
-            {
-                echo "<style> .file-size { display: block; }</style>";
-                $errors = 1;
-            }
+            //$filename = '';
         }
         else
         {
-            echo "<style> .file-type { display: block; }</style>";
-            $errors = 1;
-        }
+            if (($_FILES["file"]["type"] == "image/jpeg")||($_FILES["file"]["type"] == "image/pjpeg")|| ($_FILES["file"]["type"] == "image/png"))
+            {
+                $filename = uniqid() . "." . substr($_FILES["file"]["type"], 6);
 
-        if ($_FILES["file"]["error"] > 0)
-        {
-            $error = $_FILES["file"]["error"];
-            echo "<style> .gen-err { display: block; }</style>";
-            $errors = 1;
+                if($_FILES["file"]["size"] > 1000000)
+                {
+                    echo "<style> .file-size { display: block; }</style>";
+                    $errors = 1;
+                }
+            }
+            else
+            {
+                echo "<style> .file-type { display: block; }</style>";
+                $errors = 1;
+            }
+
+            if ($_FILES["file"]["error"] > 0)
+            {
+                $error = $_FILES["file"]["error"];
+                echo "<style> .gen-err { display: block; }</style>";
+                $errors = 1;
+            }
         }
 
         $title = trim($_POST['title']);
