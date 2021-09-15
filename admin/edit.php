@@ -2,7 +2,7 @@
     ob_start();
     session_start();
     if(!isset($_SESSION['05e252a0-8c03-4b70-95fc-5f64a6a2df6c'])) {
-        header("Location:http://flavorgallery.000webhostapp.com/admin/login.php");
+        header("Location:https://flavorgallery.000webhostapp.com/admin/login.php");
     }
 
     include("../includes/header.php");

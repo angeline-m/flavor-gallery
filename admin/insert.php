@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(!isset($_SESSION['05e252a0-8c03-4b70-95fc-5f64a6a2df6c'])) {
-        header("Location:http://flavorgallery.000webhostapp.com/admin/login.php");
+        header("Location:https://flavorgallery.000webhostapp.com/admin/login.php");
     }
     if (mysqli_connect_errno()) {
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
